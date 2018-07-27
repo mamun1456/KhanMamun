@@ -1,5 +1,5 @@
-@final_project
-Feature Final Project
+@sample_project
+Feature Sample Cucumber Project
 
   #Below two scenarios are from website https://darksky.net
   @darksky-1
