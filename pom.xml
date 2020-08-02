@@ -77,6 +77,12 @@
             <artifactId>allure-cucumber-jvm-adaptor</artifactId>
             <version>1.5.1</version>
         </dependency>
+        <dependency>
+            <groupId>backport-util-concurrent</groupId>
+            <artifactId>backport-util-concurrent</artifactId>
+            <version>3.1</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 
     <build>
@@ -127,14 +133,14 @@
         </plugins>
     </build>
 
-    <reporting>
-        <excludeDefaults>true</excludeDefaults>
-        <plugins>
-            <plugin>
-                <groupId>ru.yandex.qatools.allure</groupId>
-                <artifactId>allure-maven-plugin</artifactId>
-                <version>2.0</version>
-            </plugin>
-        </plugins>
-    </reporting>
+<!--    <reporting>-->
+<!--        <excludeDefaults>true</excludeDefaults>-->
+<!--        <plugins>-->
+<!--            <plugin>-->
+<!--                <groupId>ru.yandex.qatools.allure</groupId>-->
+<!--                <artifactId>allure-maven-plugin</artifactId>-->
+<!--                <version>2.0</version>-->
+<!--            </plugin>-->
+<!--        </plugins>-->
+<!--    </reporting>-->
 </project>
