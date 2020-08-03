@@ -58,18 +58,7 @@ public class BasePage {
 		}
 		return text;
 	}
-	public void clearText(By locator){
-		try {
 
-			SharedSD.getDriver().findElement(locator).sendKeys(Keys.chord(Keys.CONTROL,"a"));
-			SharedSD.getDriver().findElement(locator).sendKeys(Keys.BACK_SPACE);
-		}
-		catch(Exception e){
-			Assert.fail("Eelement can not be selected : " + locator.toString());
-			e.printStackTrace();
-
-		}
-	}
 	public void selectAutoComplete(By autoCompleteTextField, String partialText, By suggestedList, String valueToBeSelected) {
 		try {
 			SharedSD.getDriver().findElement(autoCompleteTextField).sendKeys(partialText);
@@ -91,12 +80,7 @@ public class BasePage {
 		// Select element by visible text
 		dropdown.selectByVisibleText(visibleText);
 	}
-	public void selectFromDropDown(By dropdownField, int index) {
-		// Select value from drop
-		Select dropdown = new Select(webAction(dropdownField));
-		// Select element by index
-		dropdown.selectByIndex(index);
-	}
+	
 	public void mouseOver(By hoverOverElement) {
 		WebElement element = webAction(hoverOverElement);
 		Actions action = new Actions(SharedSD.getDriver());
