@@ -80,7 +80,7 @@ public class BasePage {
 		// Select element by visible text
 		dropdown.selectByVisibleText(visibleText);
 	}
-	
+
 	public void mouseOver(By hoverOverElement) {
 		WebElement element = webAction(hoverOverElement);
 		Actions action = new Actions(SharedSD.getDriver());
